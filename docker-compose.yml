@@ -1,0 +1,9 @@
+# Note: this is still in beta
+version: '2'
+services:
+  neo4j:
+    image: exakat/gremlin4neo4j
+    ports:
+      - '7777:7777'
+    volumes:
+      - './neo4j/scripts:/usr/src/gremlin/neo4j/scripts'
